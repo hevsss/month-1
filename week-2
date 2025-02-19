@@ -1,0 +1,36 @@
+def sum_numbers(numbers):
+    total = sum(numbers)
+    return total
+
+numbers_list = [1, 2, 3.5, 10]
+result = sum_numbers(numbers_list)
+print("The sum is:", result) 
+
+
+print("Even numbers between 1 and 20:")
+for number in range(1, 21):
+    if number % 2 == 0:
+        print(number)
+
+
+def find_largest_number(numbers):
+    float: The largest number in the list.
+numbers_list = [3, 1, 4, 1, 5, 9, 2, 6]
+largest = find_largest_number(numbers_list)
+print("The largest number is:", largest)  
+
+def word_frequency(sentence):
+    words = sentence.split()
+    frequency = {}
+    
+    for word in words:
+        word = word.lower()  
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+            
+    return frequency
+sentence = "Hello world hello"
+frequency = word_frequency(sentence)
+print("Word frequency:", frequency)
